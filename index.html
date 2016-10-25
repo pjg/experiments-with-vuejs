@@ -16,8 +16,8 @@
     <h2>{{ name }}</h2>
 
     <ul class="item-list">
-      <li v-for="obj in posts">
-        <post :item="obj"></post>
+      <li v-for="post in posts">
+        <post :post="post"></post>
       </li>
     </ul>
   </div>
@@ -25,13 +25,14 @@
 
 <template id="post">
   <div class="post">
-   <p>{{ item }}</p>
+   <p>{{ post }}</p>
   </div>
 </template>
 
 <script src="js/vue.js"></script>
 <script src="js/vue-resource.js"></script>
 <script src="js/application.js"></script>
+
 </body>
 
 </html>

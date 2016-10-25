@@ -11,7 +11,7 @@ var subreddit = Vue.component('subreddit', {
 // Child | Componenet represiting a single post.
 var post = Vue.component('post', {
   template: "#post",
-  props: ['item']
+  props: ['post']
 });
 
 new Vue({
