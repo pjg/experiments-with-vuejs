@@ -5,7 +5,29 @@
 </head>
 
 <body>
-<div id="vue">This is Vue.js</div>
+
+<div id="vue">
+  <h1>This is Vue.js
+  <subreddit name="food"></subreddit>
+</div>
+
+<template id="subreddit">
+  <div class="subreddit">
+    <h2>{{ name }}</h2>
+
+    <ul class="item-list">
+      <li v-for="obj in posts">
+        <post :item="obj"></post>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<template id="post">
+  <div class="post">
+   <p>{{ item }}</p>
+  </div>
+</template>
 
 <script src="js/vue.js"></script>
 <script src="js/vue-resource.js"></script>
