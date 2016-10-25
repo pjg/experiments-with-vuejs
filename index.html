@@ -13,7 +13,7 @@
 
 <template id="subreddit">
   <div class="subreddit">
-    <h2>{{ name }}</h2>
+    <h2>{{ name.toUpperCase() }}</h2>
 
     <ul class="item-list">
       <li v-for="post in posts">
@@ -25,7 +25,8 @@
 
 <template id="post">
   <div class="post">
-   <p>{{ post }}</p>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
   </div>
 </template>
 

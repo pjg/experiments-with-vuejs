@@ -4,7 +4,12 @@ var subreddit = Vue.component('subreddit', {
   props: ['name'],
 
   data: function () {
-    return { posts: ['abc', 'cde'] }
+    return { posts:
+      [
+        { title: 'abc', body: 'def' },
+        { title: 'ghi', body: 'jkl' },
+      ]
+    }
   }
 });
 
