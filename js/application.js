@@ -7,7 +7,7 @@ var subreddit = Vue.component('subreddit', {
     return { posts:
       [
         { title: 'abc', body: 'def' },
-        { title: 'ghi', body: 'jkl' },
+        { title: 'ghiasdfasdfasdfasdfasdf', body: 'jkl' },
       ]
     }
   }

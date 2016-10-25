@@ -1,0 +1,21 @@
+body {
+  background: #eee;
+}
+
+#container {
+  background: white;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 60rem;
+}
+
+#vue {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.subreddit {
+  width: 33%;
+}
