@@ -8,6 +8,8 @@
 <body>
 
 <div id="container">
+  <h1>The best of Reddit</h1>
+
   <div id="vue">
     <subreddit name="aww"></subreddit>
     <subreddit name="space"></subreddit>
@@ -32,8 +34,8 @@
 
 <template id="post">
   <div class="post">
-    <h2>{{ post.title }}</h2>
-    <p>{{ post.body }}</p>
+    <img :src="post.data.thumbnail" />
+    <p><a :href="post.data.url">{{ post.data.title }}</a></p>
   </div>
 </template>
 

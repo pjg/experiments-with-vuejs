@@ -4,12 +4,13 @@ var subreddit = Vue.component('subreddit', {
   props: ['name'],
 
   data: function () {
-    return { posts:
-      [
-        { title: 'abc', body: 'def' },
-        { title: 'ghiasdfasdfasdfasdfasdf', body: 'jkl' },
-      ]
-    }
+    return { posts: [] }
+  },
+  created: function() {
+    this.$http.get("https://www.reddit.com/r/" + this.name + "/top.json?limit=5")
+      .then(function(resp) {
+        this.posts = resp.data.data.children;
+      });
   }
 });
 

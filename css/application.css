@@ -10,6 +10,10 @@ body {
   width: 60rem;
 }
 
+h1 {
+  text-align: center;
+}
+
 #vue {
   display: flex;
   flex-direction: row;
