@@ -17,7 +17,19 @@ var subreddit = Vue.component('subreddit', {
 // Child | Component representing a single post
 var post = Vue.component('post', {
   template: "#post",
-  props: ['post']
+  props: ['post'],
+  methods: {
+    truncatedTitle: function() {
+      var maxlength = 60;
+      var title = this.post.data.title;
+
+      if (title.length <= maxlength) {
+        return title;
+      } else {
+        return title.substring(0, maxlength) + '...';
+      }
+    }
+  }
 });
 
 new Vue({
