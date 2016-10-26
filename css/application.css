@@ -23,3 +23,30 @@ h1 {
 .subreddit {
   width: 33%;
 }
+
+.posts {
+  list-style: none;
+  padding: 0;
+}
+
+.post {
+  display: flex;
+}
+
+.post .image {
+  min-width: 60px;
+}
+
+.post img {
+  max-width: 50px;
+}
+
+.post .title p {
+  margin-top: 0;
+  margin-right: 8px;
+}
+
+.post a {
+  color: #2575f7;
+  text-decoration: none;
+}
